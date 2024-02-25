@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+:root {
+    --color-primario: #fff;
+}
+
+.wrapper-text {
+    margin-top: 5rem;
+}
+
+.wpp {
+    position: fixed;
+    z-index: 1000;
+    right: 15px;
+    bottom: 15px;
+}
+
+body {
+    height: 100vh;
+    background: url(corrugado\ FONDO\ OP\ 1.jpg) no-repeat;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.nav {
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    position: sticky;
+    letter-spacing: 2px;
+    height: 100px;
+    width: 100%;
+    padding: 0px 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 100;
+}
+
+.nav .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--color-primario);
+}
+
+.nav .list .item-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 600;
+    flex-wrap: nowrap;
+    border-bottom: 3px solid transparent;
+
+}
+
+.btn-contact {
+
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+.nav .btn-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 50px;
+    font-size: 35px;
+}
+
+.img-logo {
+
+    width: 70px;
+    height: 70px;
+    border-radius: 60px;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-logo a {
+    padding: 20px;
+    width: max-content;
+    text-wrap: nowrap;
+    font-size: 20px;
+    
+}
+
+.container-logo span {
+    font-weight: 700;
+    min-height: max-content;
+}
+
+
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 3s infinite alternate;
+	stroke-width: 2;
+	stroke: #FFFFFF;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); }
+	80%  {fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); stroke-width: 3; }
+	100% {
+		fill: rgba(255,255,255,1); stroke: rgba(255,255,255,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: transparent};
+
+.alfa {
+    clip-path: polygon(23% 11%, 90% 8%, 95% 29%, 78% 44%, 95% 53%, 96% 71%, 35% 98%, 5% 67%, 1% 50%);
+}
+
+/* HOVERS, MEDIAS, KEYFRAMES, ETC  */
+
+.nav .list .item-list:hover {
+    border-bottom: 3px solid #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-contact:hover{
+    border-bottom: 3px solid #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav .container-logo:hover {
+    transform: scale(1.15);
+    transition: all 0.3s ease;
+}
+
+.nav .item-list i:hover {
+    transform: rotate(360deg);
+    transition: all 0.7s ease-in-out;
+
+}
+
+.nav .btn-redes i:hover {
+    transform: rotate(360deg) scale(1.5);
+    transition: all 0.7s ease-in-out;
+}
+
+.wpp:hover {
+  animation: moveUp 0.3s ease-in-out linear;
+}
+
+@media (max-width: 800px) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .secciones, .div-contact {
+        margin: 5px;
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+    .container-logo {
+        margin: 3.5px;
+    }
+
+    nav li {
+        min-width: 30px;
+        flex-wrap: nowrap;
+    }
+  }
+  
