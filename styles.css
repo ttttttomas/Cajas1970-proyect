@@ -32,22 +32,27 @@ a {
     top: 0;
     left: 0;
     letter-spacing: 2px;
-    height: 100px;
+    height: 130px;
     width: 100%;
     padding: 0px 20px;
 	  font-family: 'Poppins', sans-serif;
     z-index: 100;
     color: #fff;
     text-decoration: none;
-
+    
 }
 
-.container-name{
-  padding: 10px 20px;
+.nav .container-menu{
+  /* background-color: #222; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
 
-.container-name a{
-  font-weight: 900;
+.nav .container-menu i{
+  font-size: 60px;
+  cursor: pointer;
 }
 
 .nav .list {
@@ -57,7 +62,37 @@ a {
     gap: 50px;
     list-style: none;
     text-decoration: none;
-    
+}
+
+.nav .list a {
+  font-size: 20px;
+}
+
+.container-center{
+ display: flex;
+ justify-content: space-between;
+ /* background-color: #222; */
+ width: 360px;
+ align-items: center;
+}
+
+.container-logo img{
+  transform: scale(1.30);
+}
+
+.container-name{
+  font-size: 22px;
+  letter-spacing: 2px;
+
+}
+
+.container-name a{
+  font-weight: 900;
+  margin-left: 50px;
+}
+
+.container-name span{
+  display: block;
 }
 
 .nav .list .item-list {
@@ -72,22 +107,13 @@ a {
     font-weight: 600;
     flex-wrap: nowrap;
     border-bottom: 3px solid transparent;
-
 }
 
-.btn-contact {
-
-    width: 50%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    font-size: 15px;
-    font-weight: 700;
-    border-radius: 10px;
-    cursor: pointer;
-    border-bottom: 3px solid transparent;
+.nav .list-redes{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
 }
 
 .nav .btn-redes {
@@ -97,6 +123,7 @@ a {
     width: 25%;
     height: 50px;
     font-size: 35px;
+    transform: scale(1.5);
 }
 
 .img-logo {
@@ -254,16 +281,11 @@ h2 a{
     transition: all 0.2s ease-in-out;
 }
 
-.container-logo:hover{
+.container-center:hover{
   transform: scale(1.15);
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
-/* .nav .img-logo:hover {
-    transform: scale(1.15);
-    transition: all 0.3s ease;
-} */
 
 .nav .item-list i:hover {
     transform: rotate(360deg);
@@ -272,7 +294,7 @@ h2 a{
 }
 
 .nav .btn-redes i:hover {
-    transform: rotate(360deg) scale(1.5);
+    transform: rotate(360deg) scale(1.4);
     transition: all 0.5s ease-in-out;
 }
 
@@ -282,11 +304,6 @@ h2 a{
   color: #222;
   background-color: #fff;
 
-}
-
-
-.wpp:hover {
-  animation: moveUp 0.3s ease-in-out linear;
 }
 
 @keyframes slide {
@@ -335,97 +352,21 @@ h2 a{
 
 }
 
-@keyframes tituloAni {
-    0% {
-      animation-timing-function: ease-in;
-      opacity: 1;
-      transform: translateX(-500px);
-    }
-  
-    24% {
-      opacity: 1;
-    }
-  
-    40% {
-      animation-timing-function: ease-in;
-      transform: translateX(-26px);
-    }
-  
-    65% {
-      animation-timing-function: ease-in;
-      transform: translateX(-13px);
-    }
-  
-    82% {
-      animation-timing-function: ease-in;
-      transform: translateX(-6.5px);
-    }
-  
-    93% {
-      animation-timing-function: ease-in;
-      transform: translateX(-4px);
-    }
-  
-    25%,
-    55%,
-    75%,
-    87%,
-    98% {
-      animation-timing-function: ease-out;
-      transform: translateX(0px);
-    }
-  
-    100% {
-      animation-timing-function: ease-out;
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
-
-@keyframes stroke {
-	0%   {
-		fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1);
-		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
-	}
-	70%  {fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); }
-	80%  {fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); stroke-width: 3; }
-	100% {
-		fill: rgba(255,255,255,1); stroke: rgba(255,255,255,0);
-		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
-	}
-}
-
 @media (max-width: 800px) {
-
-    .main{
-      flex-direction: column;
-    }
-    nav{
-        width: 100%;
-        margin-left: 0px;
-        flex-direction: column;
-        display: grid;
-        grid-template-rows: repeat(3,1fr);
-    }
-    .secciones, .div-contact {
-        margin: 5px;
-        padding: 5px;
-        flex-wrap: wrap;
-    }
-    .container-logo {
-        margin: 3.5px;
+    .nav{
+      justify-content: space-between;
+      background-color: #222;
     }
 
-    nav li {
-        min-width: 30px;
-        flex-wrap: nowrap;
-    }
+
     .slider-container{
       flex-direction: column;
     }
-    .boxs-container{
-      display: flexbox;
-      flex-wrap: wrap;
+    .list-redes .btn-redes{
+      display: none;
+    }
+    .list-redes{
+      display: none;
     }
   }
   
