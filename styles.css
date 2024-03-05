@@ -25,10 +25,16 @@ a {
   color: #fff;
 }
 
-.nav {
+.nav{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    background-color: #fff;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
-    position: fixed;
     top: 0;
     left: 0;
     letter-spacing: 2px;
@@ -42,20 +48,23 @@ a {
     
 }
 
-.nav .container-menu{
-  /* background-color: #222; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
+.container-letters{
+    display: flex;
+    background-color: #222;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+
 }
 
-.nav .container-menu i{
-  font-size: 60px;
-  cursor: pointer;
+.nav .container-menu {
+    font-size: 60px;
+
+    cursor: pointer;
+    background-color: #222;
+    display: flex;
 }
 
-.nav .list {
+.header .list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,25 +73,25 @@ a {
     text-decoration: none;
 }
 
-.nav .list a {
-  font-size: 20px;
+.header .list a {
+    font-size: 20px;
 }
 
 .container-center{
- display: flex;
- justify-content: space-between;
- /* background-color: #222; */
- width: 360px;
- align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #222; */
+    width: 360px;
+    align-items: center;
 }
 
 .container-logo img{
-  transform: scale(1.30);
+    transform: scale(1.30);
 }
 
 .container-name{
-  font-size: 22px;
-  letter-spacing: 2px;
+    font-size: 22px;
+    letter-spacing: 2px;
 
 }
 
@@ -95,7 +104,7 @@ a {
   display: block;
 }
 
-.nav .list .item-list {
+.header .list .item-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,14 +118,14 @@ a {
     border-bottom: 3px solid transparent;
 }
 
-.nav .list-redes{
+.header .list-redes{
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 200px;
 }
 
-.nav .btn-redes {
+.header .btn-redes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,7 +280,12 @@ h2 a{
 
 /* HOVERS, MEDIAS, KEYFRAMES, ETC  */
 
-.nav .list .item-list:hover {
+.nav:hover{
+  width: 300px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .list .item-list:hover {
     border-bottom: 3px solid #fff;
     transition: all 0.2s ease-in-out;
 }
@@ -287,13 +301,13 @@ h2 a{
   cursor: pointer;
 }
 
-.nav .item-list i:hover {
+.header .item-list i:hover {
     transform: rotate(360deg);
     transition: all 0.7s ease-in-out;
 
 }
 
-.nav .btn-redes i:hover {
+.header .btn-redes i:hover {
     transform: rotate(360deg) scale(1.4);
     transition: all 0.5s ease-in-out;
 }
@@ -353,7 +367,7 @@ h2 a{
 }
 
 @media (max-width: 800px) {
-    .nav{
+    .header{
       justify-content: space-between;
       background-color: #222;
     }
