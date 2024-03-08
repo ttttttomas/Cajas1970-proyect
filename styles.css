@@ -25,53 +25,47 @@ a {
   color: #fff;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    letter-spacing: 2px;
-    height: 130px;
-    width: 100%;
-    padding: 0px 20px;
-	  font-family: 'Poppins', sans-serif;
-    color: #fff;
-    text-decoration: none;  
-}
 
-.sidebar{
+.nav{
   height: 100%;
   top: 0;
   left: 0;
   width: 350px;
   position: fixed;
-  background-color: var(--bg-text);
+  background-color: rgba(167, 143, 122, 0.7);
   padding: 5px;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1000;
 }
 
-.sidebar.close {
+.nav.close {
     width: 100px;
-
+    background: rgba(167, 143, 122, 0.3);
 }
 
-.sidebar.close .container-letters{
+.nav.close .container-letters{
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
 
-.sidebar .img-logo {
+.nav .img-logo {
   width: 80px;
   border-radius: 60px;
   margin: 0px 5px;
 }
 
 
-.sidebar .container-logo {
+.nav .container-logo {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
-.sidebar .container-letters{
+.nav .container-letters{
     display: flex;
     font-family: 'Poppins', sans-serif;
     flex-direction: column;
@@ -82,39 +76,51 @@ a {
     font-size: 20px;
 }
 
-.sidebar .container-letters .name{
+.nav .container-letters .name{
     font-weight: 900;
 }
 
-.sidebar .arrow-container{
+.nav .arrow-container{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sidebar .container-logo i{
+.nav .container-logo i{
   z-index: 100;
   background-color: #15235f;
   color: #fff;  
   border: 1px solid #a2a0a0 ;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 50%;
-  /* display: none; */
   padding: 3px;
   cursor: pointer;
 
 
   position: absolute;
-  top: 50%;
-  right: -14px;
+  top: 47%;
+  right: -17px;
 }
 
-.header{
+.nav .products-container{
+  height: max-content;
   display: flex;
-  justify-content: end;
 }
 
-.header .list {
+.nav .container-cart i{
+  transition: all 0.3s ease-in-out;
+  height: 90px;
+  display: flex;
+  border: transparent;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 40px;
+  width: 90px;
+}
+
+
+ .list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,11 +129,11 @@ a {
     text-decoration: none;
 }
 
-.header .list a {
+ .list a {
     font-size: 20px;
 }
 
-.header .list .item-list {
+ .list .item-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,14 +147,14 @@ a {
     border-bottom: 3px solid transparent;
 }
 
-.header .list-redes{
+ .list-redes{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
 }
 
-.header .btn-redes {
+ .btn-redes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,12 +163,12 @@ a {
     font-size: 35px;
 }
 
-.header .container-menu{
+ .container-menu{
   display: grid;
   place-content: center;
 }
 
-.header .container-menu i{
+ .container-menu i{
   font-size: 35px;
   display: none;
 }
@@ -171,6 +177,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .slider{
@@ -268,6 +275,9 @@ h2 a{
 
 /* HOVERS, MEDIAS, KEYFRAMES, ETC  */
 
+.nav .container-cart i:hover{
+  background-color: #a2a0a03d;
+}
 
 .header .list .item-list:hover {
     border-bottom: 3px solid #fff;
@@ -354,16 +364,27 @@ h2 a{
     .slider-container{
       flex-direction: column;
     }
-    .header .list-redes{
-      display: none;
+
+    .container-menu i{
+      display: flex;
     }
 
-    .header .container-menu i{
-      display: block;
+    .nav{
+      width: 100% !important;
+      height: 100px;
+      display: grid;
+      grid-template-columns: repeat(3,max-content);
     }
-    .sidebar{
-      display: none;
+    
+    .nav .container-logo{
+      gap: 10px;
+      
     }
+
+    .nav .container-letters{
+      font-size: 17px;
+    }
+
     .main .boxs-container .box-list li{
       min-width: 300px;
       background-color: #fff;
@@ -377,6 +398,9 @@ h2 a{
       align-items: center;
       list-style: none;
       flex-wrap: wrap;
+    }
+    .nav .container-logo i {
+      display: none;
     }
   }
   
