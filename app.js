@@ -8,5 +8,3 @@ arrow.addEventListener("click",()=>{
     nav.classList.toggle("close");
     text.classList.toggle("close")
 })
-
-console.log(text)
