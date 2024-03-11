@@ -5,6 +5,9 @@ const text = document.getElementById("divText");
 const menu = document.getElementById("menu");
 const header = document.getElementById("header");
 const products = document.getElementById("products");
+const arrowList = document.querySelector(".nav .container-letters .bx");
+const containerList = document.querySelector(".nav .list-inside");
+
 
 
 arrow.addEventListener("click",()=>{
@@ -13,4 +16,11 @@ arrow.addEventListener("click",()=>{
     
 })
 
-console.log(products)
+arrowList.addEventListener("mousemove",()=>{
+    containerList.classList.toggle("close");
+} )
+
+console.log(containerList)
+console.log(arrowList)
+
+
