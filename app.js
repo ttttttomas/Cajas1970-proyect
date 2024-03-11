@@ -9,14 +9,7 @@ const arrowList = document.querySelector(".nav .container-letters .bx");
 const containerList = document.querySelector(".nav .list-inside");
 
 
-
-arrow.addEventListener("click",()=>{
-    nav.classList.toggle("close");
-    text.classList.toggle("close");
-    
-})
-
-arrowList.addEventListener("mousemove",()=>{
+arrowList.addEventListener("click",()=>{
     containerList.classList.toggle("close");
 } )
 
