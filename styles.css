@@ -5,6 +5,7 @@
 :root {
   --bg-text: rgba(255,255,255,0.2);
   --color-blue: rgb(15, 15, 102);
+  --bg-nav: rgba(167, 143, 122, 0.7);
 }
 
 body {
@@ -31,12 +32,12 @@ a {
 
 
 .nav{
-  height: 170px;
+  height: auto;
   top: 0;
   left: 0;
   width: 100%;
   position: fixed;
-  background-color: rgba(167, 143, 122, 0.7);
+  background-color: var(--bg-nav);
   padding: 5px;
   transition: all 0.3s ease-in-out;
   display: flex;
@@ -142,13 +143,6 @@ a {
   font-size: 35px;
 }
 
-
-
-
-
-
-
-
 .main{
   margin-top: 30px;
 }
@@ -235,14 +229,55 @@ h2 a{
 
 }
 
-.main .boxs-container .box-list li{
-  min-width: 300px;
-  background-color: #fff;
-  border: 1px solid black;
+.main .boxs-container .box-list .box{
+  width: 300px;
+  background-color: var(--bg-nav);
   height: 300px;
-  flex-wrap: wrap;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;  
+  font-weight: 900;
 }
 
+.main .boxs-container .img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.main .boxs-container .text-container{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffffd4;
+}
+
+.main .boxs-container .img-container .text-100{
+  font-weight: 900;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+  transform: rotate(-10deg);
+  font-size: 30px;
+}
+
+.main .boxs-container .img-container i{
+  font-size: 100px;
+  color: #ffffffd4;
+}
+
+.main .boxs-container h4{
+  margin-bottom: 20px;
+}
+
+.main .boxs-container .text-container span{
+  text-align: center;
+}
+
+.main .boxs-container .text-container ul {
+  margin-top: 25px;
+}
 
 .container-wpp{
   position: fixed;
@@ -335,6 +370,12 @@ h2 a{
 
 }
 
+@media (max-width: 1000px){
+  .slider-container{
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 600px) {
 
     .nav{
@@ -377,24 +418,8 @@ h2 a{
 
     .slider-container{
       flex-direction: column;
-      width: 100%;
     }
 
-
-    .main .boxs-container .box-list li{
-      min-width: 300px;
-      background-color: #fff;
-      border: 1px solid black;
-      height: 300px;
-      flex-wrap: wrap;
-    }
-    .main .boxs-container .box-list {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      list-style: none;
-      flex-wrap: wrap;
-    }
 
     .main .slider img{
       width: 600px;
