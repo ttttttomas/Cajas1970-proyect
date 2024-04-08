@@ -32,7 +32,6 @@ a {
 
 
 .nav{
-  height: auto;
   top: 0;
   left: 0;
   width: 100%;
@@ -76,7 +75,7 @@ a {
 .list-inside.close{
   list-style: none;
   width: 100%;
-  overflow: hidden;
+
   height: 9px;
   transition: all 0.3s ease-in-out;
   
@@ -85,6 +84,8 @@ a {
 .item-list-inside{
   border-left: 2px solid black;
   width: 100%;
+  list-style: none;
+
   padding-left: 50px;
   margin-top: 10px;
   transition: all 0.3s ease-in-out;
@@ -125,8 +126,10 @@ a {
 .nav .sucursales-container{
   font-weight: 700;
   display: flex;
-  justify-content: center;
   align-items: center;
+
+  width: 35px;
+  transition: all 0.3s ease-in-out alternate;
   gap: 20px;
 }
 
@@ -168,7 +171,7 @@ a {
 }
 
 .slider img {
-  animation: slide 16s infinite ease-in-out;
+  animation: slide 16s infinite ease-in-out alternate;
 }
 
 .main .slider-container .description {
@@ -279,6 +282,37 @@ h2 a{
   margin-top: 25px;
 }
 
+.main .map-container{
+  display: flex;
+  /* background-color: #222; */
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.main .map-container .map{
+  width: 600px;
+  height: 450px;
+  border: 0;
+}
+
+.main .map-container .container-letters{
+  background: var(--bg-text);
+  color: #fff;
+  font-family: "Russo One", sans-serif;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.main .map-container .container-letters span{
+  display: block;
+  font-size: 20px;
+}
+
+.main .map-container .container-letters h3{
+  font-size: 30px;
+}
+
 .container-wpp{
   position: fixed;
     right: 15px;
@@ -288,6 +322,10 @@ h2 a{
     
 
 /* HOVERS, MEDIAS, KEYFRAMES, ETC  */
+
+.nav .sucursales-container:hover{
+  width: auto;
+}
 
 .header .list .item-list:hover {
     border-bottom: 3px solid #fff;
@@ -318,10 +356,8 @@ h2 a{
 
 .main .slider-container .description a:hover{
   transform: scale(1.15);
-  transition: transform 0.25s ease-in-out;
   color: #222;
   background-color: #fff;
-
 }
 
 @keyframes slide {
@@ -374,6 +410,9 @@ h2 a{
   .slider-container{
     flex-direction: column;
   }
+  .main .map-container{
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 600px) {
@@ -391,6 +430,10 @@ h2 a{
       padding: 10px;
       border-radius: 30px;
       border:1px solid #000;
+    }
+
+    .nav .container-cart .container-letters i{
+      display: none;
     }
 
     .nav .container-cart{
@@ -424,6 +467,10 @@ h2 a{
     .main .slider img{
       width: 600px;
       height: auto;
+    }
+
+    .main .boxs-container li{
+      background: #000;
     }
   }
   

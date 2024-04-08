@@ -7,13 +7,13 @@ const header = document.getElementById("header");
 const products = document.getElementById("products");
 const arrowList = document.querySelector(".nav .container-letters .bx");
 const containerList = document.querySelector(".nav .list-inside");
+const sucursales = document.querySelector(".nav .sucursales-container");
 
 
 arrowList.addEventListener("click",()=>{
     containerList.classList.toggle("close");
 } )
 
-console.log(containerList)
-console.log(arrowList)
+
 
 
