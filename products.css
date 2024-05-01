@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+
+:root {
+  --bg-text: rgba(255,255,255,0.2);
+  --color-blue: rgb(15, 15, 102);
+  --bg-nav: rgba(167, 143, 122, 0.7);
+}
+
+body {
+    background: url(corrugado\ FONDO\ OP\ 1.jpg) no-repeat;
+    background-size: cover;
+}
+
+*, a {
+    margin: 0; 
+    box-sizing: border-box;
+    outline: none;
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+i{
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav{
+  width: 100%;
+  position: fixed;
+  background-color: var(--bg-nav);
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  z-index: 2;
+}
+
+.nav .img-logo {
+  width: 80px;
+  border-radius: 60px;
+  margin: 0px 5px;
+}
+
+
+.nav .container-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.nav .container-logo .container-letters{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav .container-letters .name{
+  font-weight: 900;
+  list-style: none;
+  color: #000;
+  padding: 0px 15px;
+}
+
+.nav .products-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  padding: 0px 10px;
+}
+
+.nav .container-cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .container-cart i{
+  font-size: 40px;
+  color: #000;
+}
+
+.nav .sucursales-container{
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+
+  width: 35px;
+  transition: all 0.3s ease-in-out alternate;
+  gap: 20px;
+}
+
+.nav .sucursales-container i{
+  font-size: 35px;
+}
+
+.nav .list-btn{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  gap: 50px;
+  font-size: 35px;
+}
+.nav .btn-redes i:hover {
+    transform: rotate(360deg) scale(1.4);
+    transition: all 0.5s ease-in-out;
+}

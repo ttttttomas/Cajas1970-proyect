@@ -1,4 +1,6 @@
 {
     "CodeGPT.apiKey": "CodeGPT Plus Beta",
-    "editor.fontSize": 13
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true,
+    "liveServer.settings.port": 5501,
 }

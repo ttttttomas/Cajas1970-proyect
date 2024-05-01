@@ -9,7 +9,7 @@
 }
 
 body {
-    background: url(corrugado\ FONDO\ OP\ 1.jpg) no-repeat;
+    background: url(./img/corrugado\ FONDO\ OP\ 1.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -18,10 +18,10 @@ body {
     box-sizing: border-box;
     outline: none;
     padding-inline-start: 0;
-
+    list-style: none;
 }
 
-i{
+i,button{
   cursor: pointer;
 }
 
@@ -29,7 +29,6 @@ a {
   text-decoration: none;
   color: #fff;
 }
-
 
 .nav{
   top: 0;
@@ -42,8 +41,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 2;
   font-family: 'Poppins', sans-serif;
+  z-index: 2;
 }
 
 .nav .img-logo {
@@ -66,35 +65,12 @@ a {
   flex-direction: column;
 }
 
-.list-inside{
-  list-style: none;
-  transition: all 0.3s ease-in-out;
-  
-}
-
-.list-inside.close{
-  list-style: none;
-  width: 100%;
-
-  height: 9px;
-  transition: all 0.3s ease-in-out;
-  
-}
-
-.item-list-inside{
-  border-left: 2px solid black;
-  width: 100%;
-  list-style: none;
-
-  padding-left: 50px;
-  margin-top: 10px;
-  transition: all 0.3s ease-in-out;
-  
-}
 
 .nav .container-letters .name{
   font-weight: 900;
   list-style: none;
+  color: #000;
+  padding: 0px 15px;
 }
 
 .nav .products-container{
@@ -102,16 +78,15 @@ a {
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s ease-in-out;
-  padding: 0px 4rem;
+  padding: 0px 10px;
 }
 
 .nav .products-container .container-letters{
-  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
+}
 
 .nav .container-cart{
   display: flex;
@@ -121,6 +96,7 @@ a {
 
 .nav .container-cart i{
   font-size: 40px;
+  color: #000;
 }
 
 .nav .sucursales-container{
@@ -167,11 +143,10 @@ a {
   height: 600px;
   display: flex;
   align-items: center;
-  
 }
 
 .slider img {
-  animation: slide 16s infinite ease-in-out alternate;
+  animation: slide 16s infinite ease-in-out;
 }
 
 .main .slider-container .description {
@@ -200,6 +175,7 @@ a {
   font-family: 'Poppins', sans-serif;
   border-radius: 15px;
   font-weight: 700;
+  transition: all 0.3s ease-in-out;
 }
 
 h2{
@@ -313,19 +289,86 @@ h2 a{
   font-size: 30px;
 }
 
+.products-main{
+  margin-top: 150px;
+  /* background: #fff; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+
+.products-main h1{
+  text-align: center;
+  padding: 30px;
+  color: #fff;
+  height: max-content;
+}
+
+.products-wrapper{
+  display: flex;
+}
+
+.box-products-wrapper{
+  display: flex;
+  margin: 0px 20px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.products-main .aside{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  gap: 20px;
+
+}
+
+.products-main .aside .btn-filters{
+  width: 200px;
+  padding: 7px;
+  border-radius: 10px;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.products-main .box-product{
+  background: #fff;
+  height: max-content;
+  width: max-content;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.products-main .box-product img{
+  width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container-wpp{
   position: fixed;
     right: 15px;
     bottom: 15px;
 
 }
-    
 
 /* HOVERS, MEDIAS, KEYFRAMES, ETC  */
-
-.nav .sucursales-container:hover{
-  width: auto;
-}
 
 .header .list .item-list:hover {
     border-bottom: 3px solid #fff;
@@ -358,36 +401,6 @@ h2 a{
   transform: scale(1.15);
   color: #222;
   background-color: #fff;
-}
-
-@keyframes slide {
-  0%{
-    margin-left: 0%;
-  }
-  20%{
-    margin-left: 0%;
-  }
-
-  25%{
-    margin-left: -100%;
-  }
-  45%{
-    margin-left: -100%;
-  }
-
-  50%{
-    margin-left: -200%;
-  }
-  70%{
-    margin-left: -200%;
-  }
-
-  75%{
-    margin-left: -300%;
-  }
-  95%{
-    margin-left: -300%;
-  }
 }
 
 @keyframes slide {
