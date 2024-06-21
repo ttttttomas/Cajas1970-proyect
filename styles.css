@@ -334,18 +334,19 @@ h2 a{
 
 .products-main .box-product{
   background: #fff;
-  height: max-content;
   width: max-content;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-radius: 5px;
+
 }
 
 .products-main .box-product img{
-  width: 250px;
+  width: 200px;
+  min-height: 157px;
 }
 
 
