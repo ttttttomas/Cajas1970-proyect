@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,20 +62,22 @@
     </a>
 
     <main class="products-main">
-        <h1>NUESTROS PRODUCTOS</h1>
+        <h1 id="title" >TODOS NUESTROS PRODUCTOS</h1>
         <div class="products-wrapper">
-            <aside class="aside">
-                <button id="desayuno" class="btn-filters">Desayuno</button>
-                <button id="drips" class="btn-filters">Drips</button>
-                <button id="maletines" class="btn-filters">Maletines</button>
-                <button id="deslizables" class="btn-filters">Deslizables</button>
-                <button id="torta" class="btn-filters">Torta</button>
-                <button id="tapacaja" class="btn-filters">Tapa y caja</button>
-                <button id="cupcake" class="btn-filters">Cupcake</button>
-                <button id="macarron" class="btn-filters">Macarron</button>
-            </aside>
-            <div id="box-products-wrapper" class="box-products-wrapper"><!-- js -->
+            <div class="aside-wrapper">
+                <aside id="aside-filters" class="aside">
+                    <div id="todos" class="filters active">Todos</div>
+                    <div id="Desayuno" class="filters">Desayuno</div>
+                    <div id="Drips" class="filters">Drips</div>
+                    <div id="Maletines" class="filters">Maletines</div>
+                    <div id="Deslizables" class="filters">Deslizables</div>
+                    <div id="Torta" class="filters">Torta</div>
+                    <div id="Tapacaja" class="filters">Tapa y caja</div>
+                    <div id="Cupcake" class="filters">Cupcake</div>
+                    <div id="Macarron" class="filters">Macarron</div>
+                </aside>
             </div>
+            <div id="box-products-wrapper" class="box-products-wrapper">  <!-- js -->  </div>
         </div>
     <footer></footer>
     </main>

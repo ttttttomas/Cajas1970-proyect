@@ -25,10 +25,11 @@ i,button{
   cursor: pointer;
 }
 
-a {
+a{
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
+
 
 .nav{
   top: 0;
@@ -103,7 +104,7 @@ a {
   font-weight: 700;
   display: flex;
   align-items: center;
-
+  color: #000;
   width: 35px;
   transition: all 0.3s ease-in-out alternate;
   gap: 20px;
@@ -121,6 +122,11 @@ a {
   gap: 50px;
   font-size: 35px;
 }
+.nav .list-btn i{
+  transition: all 0.5s ease-in-out;
+}
+
+
 
 .main{
   margin-top: 30px;
@@ -157,6 +163,7 @@ a {
   align-items: center;
   padding: 50px 20px;
   font-size: 20px;
+  color: #fff;
   flex-direction: column;
 }
 
@@ -171,6 +178,7 @@ a {
   margin: 10px 20px;
   border: 2px solid #fff;
   padding: 10px 20px;
+  color: #fff;
   font-size: 25px;
   font-family: 'Poppins', sans-serif;
   border-radius: 15px;
@@ -192,6 +200,7 @@ h2{
 
 h2 a{
   text-decoration: underline;
+  color: #fff;
 }
 
 .main .boxs-container {
@@ -289,84 +298,14 @@ h2 a{
   font-size: 30px;
 }
 
-.products-main{
-  margin-top: 150px;
-  /* background: #fff; */
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Poppins', sans-serif;
-}
-
-.products-main h1{
-  text-align: center;
-  padding: 30px;
-  color: #fff;
-  height: max-content;
-}
-
-.products-wrapper{
-  display: flex;
-}
-
-.box-products-wrapper{
-  display: flex;
-  margin: 0px 20px;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.products-main .aside{
-  display: flex;
-  flex-direction: column;
-  padding: 10px 20px;
-  gap: 20px;
-
-}
-
-.products-main .aside .btn-filters{
-  width: 200px;
-  padding: 7px;
-  border-radius: 10px;
-  background: #ffffff;
-  font-family: 'Poppins', sans-serif;
-}
-
-.products-main .box-product{
-  background: #fff;
-  width: max-content;
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 5px;
-
-}
-
-.products-main .box-product img{
-  width: 200px;
-  min-height: 157px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container-wpp{
   position: fixed;
     right: 15px;
     bottom: 15px;
+}
 
+.container-wpp img{
+  transform: scale(0.8);
 }
 
 /* HOVERS, MEDIAS, KEYFRAMES, ETC  */
@@ -389,13 +328,11 @@ h2 a{
 
 .header .item-list i:hover {
     transform: rotate(360deg);
-    transition: all 0.7s ease-in-out;
 
 }
 
 .nav .btn-redes i:hover {
     transform: rotate(360deg) scale(1.4);
-    transition: all 0.5s ease-in-out;
 }
 
 .main .slider-container .description a:hover{

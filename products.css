@@ -9,8 +9,9 @@
 }
 
 body {
-    background: url(corrugado\ FONDO\ OP\ 1.jpg) no-repeat;
+    background: url(./img/corrugado\ FONDO\ OP\ 1.jpg) no-repeat;
     background-size: cover;
+
 }
 
 *, a {
@@ -21,16 +22,19 @@ body {
     list-style: none;
 }
 
-i{
+i,button{
   cursor: pointer;
 }
 
-a {
+a{
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
+
 .nav{
+  top: 0;
+  left: 0;
   width: 100%;
   position: fixed;
   background-color: var(--bg-nav);
@@ -63,6 +67,7 @@ a {
   flex-direction: column;
 }
 
+
 .nav .container-letters .name{
   font-weight: 900;
   list-style: none;
@@ -76,6 +81,13 @@ a {
   align-items: center;
   transition: all 0.3s ease-in-out;
   padding: 0px 10px;
+}
+
+.nav .products-container .container-letters{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .nav .container-cart{
@@ -93,7 +105,7 @@ a {
   font-weight: 700;
   display: flex;
   align-items: center;
-
+  color: #000;
   width: 35px;
   transition: all 0.3s ease-in-out alternate;
   gap: 20px;
@@ -111,7 +123,99 @@ a {
   gap: 50px;
   font-size: 35px;
 }
+.nav .list-btn i{
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+.products-main{
+  margin-top: 150px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+
+.products-main h1{
+  text-align: center;
+  padding: 30px;
+  color: #fff;
+}
+
+.products-wrapper{
+  display: flex;
+}
+
+.box-products-wrapper{
+  display: flex;
+  transition: all 0.3s ease-in-out;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.products-main .aside{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  gap: 20px;
+
+}
+
+.products-main .aside .filters{
+  width: 200px;
+  padding: 7px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  cursor: pointer;
+  background: #00000075;
+}
+
+.products-main .aside .filters.active{
+  font-weight: bold;
+  background: #00000000;
+}
+.products-main .aside .filters:focus{
+  font-weight: bold;
+  background: #df2222;
+}
+
+.products-main .box-product{
+  background: #fff;
+  width: max-content;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.products-main .box-product img{
+  width: 200px;
+  min-height: 157px;
+}
+
+.products-main .aside-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-wpp{
+  position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
+.container-wpp img{
+  transform: scale(0.8);
+}
+
 .nav .btn-redes i:hover {
-    transform: rotate(360deg) scale(1.4);
-    transition: all 0.5s ease-in-out;
+  transform: rotate(360deg) scale(1.4);
 }
