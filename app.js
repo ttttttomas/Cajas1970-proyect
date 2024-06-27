@@ -1,6 +1,5 @@
-const dom = (element)=>{
-return document.getElementById(element)
-}
+const dom = (element)=>{return document.getElementById(element)}
+
 const divProducts = dom("box-products-wrapper")
 const title = dom("title")
 const aside = dom("aside-filters")
@@ -8,75 +7,75 @@ const btns = document.querySelectorAll(".filters")
 
 let products = [
   {
-      "img": "./img/fotoscajas/BOX/box.jpg",
+      "img": "./img/fotoscajas/BOX/box.png",
       "title": "BOX",
-      "medida": "",
+      "medida": "19x12x9 | 24x16x10 | 24x14x12",
       "categoria": "box",
-      "id" : "desayuno"
+      "id" : "BOX"
     },
     {
-      "img": "./img/fotoscajas/BOX/box 20x20x10.jpg",
+      "img": "./img/fotoscajas/BOX/box 20x20x10.png",
       "title": "BOX",
       "medida": "20x20x10",
       "categoria": "box",
-      "id" : "desayuno"
+      "id" : "BOX"
     },
     {
-      "img": "./img/fotoscajas/BOX/box 25x12x7.jpg",
+      "img": "./img/fotoscajas/BOX/box 25x12x7.png",
       "title": "BOX",
-      "medida": "25x12x7",
+      "medida": "25x20x7 | 25x12x7",
       "categoria": "box",
-      "id" : "desayuno"
+      "id" : "BOX"
+    },
+    {
+      "img": "./img/fotoscajas/BOX/Box ",
+      "title": "Frank Herbert",
+      "medida": "1965",
+      "categoria": "box",
+      "id" : "MACARRON"
     },
     {
       "img": "D",
       "title": "Frank Herbert",
       "medida": "1965",
       "categoria": "box",
-      "id" : "macarron"
+      "id" : "TORTA"
     },
     {
       "img": "D",
       "title": "Frank Herbert",
       "medida": "1965",
       "categoria": "box",
-      "id" : "torta"
+      "id" : "TORTA"
     },
     {
       "img": "D",
       "title": "Frank Herbert",
       "medida": "1965",
       "categoria": "box",
-      "id" : "torta"
+      "id" : "MALETINES"
     },
     {
       "img": "D",
       "title": "Frank Herbert",
       "medida": "1965",
       "categoria": "box",
-      "id" : "maletines"
+      "id" : "MALETINES"
     },
     {
       "img": "D",
       "title": "Frank Herbert",
       "medida": "1965",
       "categoria": "box",
-      "id" : "maletines"
+      "id" : "DRIPS"
     },
     {
       "img": "D",
       "title": "Frank Herbert",
       "medida": "1965",
       "categoria": "box",
-      "id" : "cupcake"
+      "id" : "CUPCAKE"
     },
-    {
-      "img": "D",
-      "title": "Frank Herbert",
-      "medida": "1965",
-      "categoria": "box",
-      "id" : "cupcake"
-    }
 ]
 const uploadProducts = (productosElegidos) => {
 
@@ -103,16 +102,17 @@ btns.forEach(btn =>{
     e.currentTarget.classList.add("active")
 
     if (e.currentTarget.id != "todos") {
-      const titleCategory = products.find(producto =>
-        producto.id === e.currentTarget.id)
-        console.log(titleCategory.id)
+      const titleCategory = products.find(product =>
+         e.currentTarget.id === product.id);
       title.innerText = titleCategory.id;
-      const productosFiltrados = products.filter(producto =>
-        producto.id === e.currentTarget.id)
-        uploadProducts(productosFiltrados)
+
+      const productosFiltrados = products.filter(product =>
+         product.id === e.currentTarget.id);
+      uploadProducts(productosFiltrados)
     }
     else{
       uploadProducts(products)
+      title.innerText = "TODOS NUESTROS PRODUCTOS"
     }
   })
 })
