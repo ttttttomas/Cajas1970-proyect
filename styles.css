@@ -17,7 +17,6 @@ body {
     margin: 0; 
     box-sizing: border-box;
     outline: none;
-    padding-inline-start: 0;
     list-style: none;
 }
 
@@ -204,7 +203,7 @@ h2 a{
 }
 
 .main .boxs-container {
-  margin: 150px 100px;
+  margin: 100px 100px;
 }
 
 .main .boxs-container .box-list {
