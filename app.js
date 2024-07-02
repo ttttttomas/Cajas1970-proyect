@@ -112,9 +112,6 @@ let products = [
       "id" : "TORTA"
     },
     {
-      
-    },
-    {
       "img": "./img/TRANSPARENTE BG.png",
       "title": "",
       "medida": "16x16x15 | 16x16x20 | 20x20x15 | 20x20x20 | 25x25x15 </br> 25x25x25 | 25x25x40 | 30x30x15 | 30x30x25 | 30x30x40",
@@ -124,7 +121,7 @@ let products = [
     {
       "img": "./img/fotoscajas/DRIP/Drip 3.png",
       "title": "DRIPS TAPA TRANSPARENTE",
-      "medida": "",
+      "medida": "12",
       "categoria": "DRIPS",
       "id" : "DRIPS"
     },
@@ -138,9 +135,37 @@ let products = [
     {
       "img": "./img/fotoscajas/DRIP/Drips.png",
       "title": "DRIPS",
-      "medida": "",
+      "medida": "12",
       "categoria": "box",
       "id" : "DRIPS"
+    },
+    {
+      "img": "./img/fotoscajas/maletin/maletin1.png",
+      "title": "Maletin",
+      "medida": "16x16x18 | 14x14x17 | 17x10x15 | 25x14x13",
+      "categoria": "MALETINES",
+      "id" : "MALETINES"
+    },
+    {
+      "img": "./img/fotoscajas/maletin/maletin2.png",
+      "title": "Maletin",
+      "medida": "16x16x18 | 14x14x17 | 17x10x15 | 25x14x13",
+      "categoria": "MALETINES",
+      "id" : "MALETINES"
+    },
+    {
+      "img": "./img/fotoscajas/maletin/maletin3.png",
+      "title": "Maletin",
+      "medida": "16x16x18 | 14x14x17 | 17x10x15 | 25x14x13",
+      "categoria": "MALETINES",
+      "id" : "MALETINES"
+    },
+    {
+      "img": "./img/fotoscajas/maletin/maletin4.png",
+      "title": "Maletin",
+      "medida": "16x16x18 | 14x14x17 | 17x10x15 | 25x14x13",
+      "categoria": "MALETINES",
+      "id" : "MALETINES"
     }
 ]
 
