@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --bg-text: rgba(255,255,255,0.2);
@@ -8,9 +8,13 @@
   --bg-nav: rgba(167, 143, 122, 0.7);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
-    background: url(./img/corrugado\ FONDO\ OP\ 1.jpg) no-repeat;
-    background-size: cover;
+  background: url(./img/corrugado\ FONDO\ OP\ 1.jpg) no-repeat;
+  background-size: cover;
 }
 
 *, a {
@@ -103,6 +107,7 @@ a{
   font-weight: 700;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #000;
   width: 35px;
   transition: all 0.3s ease-in-out alternate;
@@ -128,7 +133,8 @@ a{
 
 
 .main{
-  margin-top: 30px;
+  margin-top: 150px;
+  font-family: 'Montserrat', system-ui;
 }
 
 .slider-container {
@@ -140,18 +146,24 @@ a{
 .slider{
   display: flex;
   width: 600px;
-  overflow:hidden;
+  overflow-x: hidden;
+  padding: 0;
 }
 
 .slider li {
-  width: 600px;
-  height: 600px;
+  /* border-right: 1px solid white; */
   display: flex;
+  width: 600px;
   align-items: center;
+  justify-content: center;
+  /* background: #000; */
+  animation: slide 16s infinite;
 }
 
 .slider img {
-  animation: slide 16s infinite ease-in-out;
+  object-fit: contain;
+  transform: scale();
+  /* background-color: #fff; */
 }
 
 .main .slider-container .description {
@@ -164,11 +176,12 @@ a{
   font-size: 20px;
   color: #fff;
   flex-direction: column;
+  font-family: 'Montserrat', system-ui;
+  font-weight: bold;
 }
 
 .main .slider-container .description p{
   font-size: 50px;
-  font-family: "Russo One", sans-serif;
   color: #fff;
   
 }
@@ -179,7 +192,6 @@ a{
   padding: 10px 20px;
   color: #fff;
   font-size: 25px;
-  font-family: 'Poppins', sans-serif;
   border-radius: 15px;
   font-weight: 700;
   transition: all 0.3s ease-in-out;
@@ -192,7 +204,6 @@ h2{
   background-color: var(--bg-text);
   padding: 5px;
   color: #fff;
-  font-family: "Russo One", sans-serif;
   font-size: 25px;
   border-radius: 50px;
 }
@@ -221,8 +232,11 @@ h2 a{
   background-color: var(--bg-nav);
   height: 300px;
   padding: 10px 20px;
-  font-family: 'Poppins', sans-serif;  
   font-weight: 900;
+}
+
+.main .boxs-container .box-list .box .small-text{
+  font-size: 12px;
 }
 
 .main .boxs-container .img-container{
@@ -268,7 +282,6 @@ h2 a{
 
 .main .map-container{
   display: flex;
-  /* background-color: #222; */
   align-items: center;
   justify-content: center;
   gap: 100px;
@@ -283,7 +296,6 @@ h2 a{
 .main .map-container .container-letters{
   background: var(--bg-text);
   color: #fff;
-  font-family: "Russo One", sans-serif;
   padding: 10px 20px;
   border-radius: 10px;
 }
@@ -297,10 +309,63 @@ h2 a{
   font-size: 30px;
 }
 
+.main .sucursales-title{
+  text-align: center;
+  margin-top: 100px;
+  color: #fff;
+}
+
+.main .sucursales-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.main .sucursales-container .container-letters{
+  background-color: var(--bg-text);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.main .sucursales-container .container-letters h3{
+  font-size: 30px;
+}
+
+.main .sucursales-container .container-letters li{
+  font-size: 20px;
+  
+}
+
+.footer{
+  background-color: var(--bg-nav);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 100px;
+  font-family: 'Poppins', sans-serif;
+  height: 100px;
+}
+
+.footer .rights-container{
+  gap: 20px;
+  display: flex;
+}
+
+.footer ul{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
 .container-wpp{
   position: fixed;
-    right: 15px;
-    bottom: 15px;
+  right: 15px;
+  bottom: 10px;
 }
 
 .container-wpp img{
@@ -368,45 +433,36 @@ h2 a{
 @media (max-width: 600px) {
 
     .nav{
-      width: 100%;
-      flex-direction: column;
-      height: auto;
+      flex-direction: row;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+      gap: 80px;
+    }
+
+
+    .nav .container-logo .container-letters{
+      text-wrap: nowrap;
     }
 
     .nav .products-container{
-      display: grid;
-	    grid-template-rows: repeat(3, 1fr);
-	    grid-template-columns: repeat(2, 1fr);
-      padding: 10px;
-      border-radius: 30px;
-      border:1px solid #000;
+      justify-content: space-between;
     }
 
-    .nav .container-cart .container-letters i{
+    .nav .products-container .container-cart{
+      margin: 0 20px;
+    }
+
+    .nav .products-container .container-cart .container-letters{
       display: none;
     }
 
-    .nav .container-cart{
-      grid-area: 1 / 1 / 3 / 2;
-      padding: px;
-    }
-
-    .nav .sucursales-container{
-      grid-area: 3 / 1 / 5 / 2;
-        font-weight: 700;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 20px;
-        padding-left: 5px;
+    .nav .products-container .sucursales-container span{
+      display: none;
     }
 
     .nav .list-btn{
-      grid-area: 1 / 2 / 5 / 3;
-    }
-
-    .nav .container-letters{
-      font-size: 17px;
+      display: block;
     }
 
     .slider-container{

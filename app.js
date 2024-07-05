@@ -120,14 +120,14 @@ let products = [
     },
     {
       "img": "./img/fotoscajas/DRIP/Drip 3.png",
-      "title": "DRIPS TAPA TRANSPARENTE",
-      "medida": "12",
+      "title": "Drips tapa transparente",
+      "medida": "",
       "categoria": "DRIPS",
       "id" : "DRIPS"
     },
     {
       "img": "./img/fotoscajas/DRIP/Drip 2.png",
-      "title": "DRIPS EXAGONALES",
+      "title": "Drips Exagonales",
       "medida": "28X25 | 28X40",
       "categoria": "DRIPS",
       "id" : "DRIPS"
@@ -135,7 +135,7 @@ let products = [
     {
       "img": "./img/fotoscajas/DRIP/Drips.png",
       "title": "DRIPS",
-      "medida": "12",
+      "medida": "",
       "categoria": "box",
       "id" : "DRIPS"
     },
@@ -166,7 +166,36 @@ let products = [
       "medida": "16x16x18 | 14x14x17 | 17x10x15 | 25x14x13",
       "categoria": "MALETINES",
       "id" : "MALETINES"
+    },
+    {
+      "img": "./img/fotoscajas/canasta/canasta1.png",
+      "title": "Canasta",
+      "medida": "12,5x12x5x4 | 15x15x5 | 22x12x5 | 27x27x10",
+      "categoria": "Canasta",
+      "id" : "CANASTA"
+    },
+    {
+      "img": "./img/fotoscajas/canasta/canasta2.png",
+      "title": "Canasta",
+      "medida": "12,5x12x5x4 | 15x15x5 | 22x12x5 | 27x27x10",
+      "categoria": "Canasta",
+      "id" : "CANASTA"
+    },
+    {
+      "img": "./img/fotoscajas/alfajores/alfajores1.png",
+      "title": "Alfajores",
+      "medida": "6 UNIDADES: 20x13,5x2,5 | 12 UNIDADES: 22x14x5",
+      "categoria": "Alfajores",
+      "id" : "ALFAJORES"
     }
+    // ,
+    // {
+    //   "img": "./img/fotoscajas/bombones/bombones1.png",
+    //   "title": "Bombones",
+    //   "medida": "12,5x12x5x4 | 15x15x5 | 22x12x5 | 27x27x10",
+    //   "categoria": "Bombones",
+    //   "id" : "BOMBONES"
+    // },
 ]
 
 const productosFiltradosEnTodos = products.filter(product =>

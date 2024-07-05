@@ -239,6 +239,7 @@ a{
   background-color: rgb(28, 177, 28);
   border-radius: 50%;
   box-shadow: 2px 2px 2px #000;
+  transition: all 0.3s ease-in-out;
 }
 
 .container-wpp img{
@@ -251,6 +252,8 @@ a{
 }
 
 .container-wpp:hover{
-  transform: scale();
+  transform: scale(1.05);
   box-shadow: none;
+  background-color: rgb(33, 146, 33);
 }
+
