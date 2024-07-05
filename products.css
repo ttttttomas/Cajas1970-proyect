@@ -257,3 +257,121 @@ a{
   background-color: rgb(33, 146, 33);
 }
 
+@media (max-width: 1000px){
+  .slider-container{
+    flex-direction: column;
+  }
+  .main .map-container{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+
+    .nav{
+      flex-direction: row;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+      gap: 80px;
+      padding: 0 20px;
+    }
+
+
+    .nav .container-logo .container-letters{
+      text-wrap: nowrap;
+    }
+
+    .nav .products-container .container-cart{
+      margin-right: 30px;
+    }
+
+    .nav .products-container .container-cart .container-letters{
+      display: none;
+    }
+
+    .nav .products-container .sucursales-container{
+      margin-right: 30px;
+    }
+
+    .nav .products-container .sucursales-container span{
+      display: none;
+    }
+
+    .nav .list-btn{
+      display: block;
+      padding: 0 20px;
+    }
+    
+    .slider{
+      padding: 0 10px;
+    }
+
+    .main .slider-container .description{
+      margin: 0;
+    }
+
+    .main .slider img{
+      width: 600px;
+      height: auto;
+    }
+
+    .slider-container{
+      flex-direction: column;
+    }
+
+    .main .catalogo{
+      padding: 35px 10px;
+    }
+
+    .main .boxs-container .box-list .box{
+      height: auto;
+    }
+
+    .main .map-container .container-letters{
+      margin: 0 20px;
+      text-align: center;
+    }
+
+    .main .sucursales-container{
+      flex-direction: column;
+    }
+
+    .footer{
+      gap: 0;
+    }
+
+    .footer .rights-container{
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .footer ul div{
+      display: block;
+    }
+
+    .container-wpp{
+      bottom: 60px;
+      z-index: 9999;
+    }
+
+    .products-main{
+      margin-top: 120px;
+    }
+
+    .products-main .products-wrapper{
+      flex-direction: column;
+    }
+
+    .products-main .aside{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+
+    .products-main .box-products-wrapper{
+      padding: 0 5px;
+    }
+  }
