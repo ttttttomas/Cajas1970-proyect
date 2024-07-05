@@ -7,105 +7,105 @@ const btns = document.querySelectorAll(".filters")
 
 let products = [
   {
-    "img": "./img/fotoscajas/maletin/maletin 5.png",
+    "img": "./img/fotoscajas/MALETIN/maletin 5.png",
     "title": "Budinera",
     "medida": "23x8.5x8.5 | 24x10x10",
     "categoria": "box",
     "id" : "BOX"
   },
   {
-      "img": "./img/fotoscajas/BOX/box.png",
+      "img": "./img/fotoscajas/BOX/Box.png",
       "title": "Box",
       "medida": "19x12x9 | 24x16x10 | 24x14x12",
       "categoria": "box",
       "id" : "BOX"
     },
     {
-      "img": "./img/fotoscajas/BOX/box 20x20x10.png",
+      "img": "./img/fotoscajas/BOX/Box 20x20x10.png",
       "title": "Box",
       "medida": "20x20x10",
       "categoria": "box",
       "id" : "BOX"
     },
     {
-      "img": "./img/fotoscajas/BOX/box 25x12x7.png",
+      "img": "./img/fotoscajas/BOX/Box 25x12x7.png",
       "title": "Box",
       "medida": "25x20x7",
       "categoria": "box",
       "id" : "BOX"
     },
     {
-      "img": "./img/fotoscajas/tapa y caja/Cajatapa1.png",
+      "img": "./img/fotoscajas/TAPA Y CAJA/Cajatapa1.png",
       "title": "Tapa y caja",
       "medida": "25x25x10 | 25x25x15 | 32x25x10",
       "categoria": "box",
       "id" : "TAPA Y CAJA"
     },
     {
-      "img": "./img/fotoscajas/tapa y caja/tapacaja2.png",
+      "img": "./img/fotoscajas/TAPA Y CAJA/tapacaja2.png",
       "title": "Tapa y caja",
       "medida": "25x25x10 | 25x25x15 | 32x25x10",
       "categoria": "box",
       "id" : "TAPA Y CAJA"
     },
     {
-      "img": "./img/fotoscajas/tapa y caja/tapacaja3.png",
+      "img": "./img/fotoscajas/TAPA Y CAJA/tapacaja3.png",
       "title": "Tapa y caja",
       "medida": "25x25x10 | 25x25x15 | 32x25x10",
       "categoria": "box",
       "id" : "TAPA Y CAJA"
     },
     {
-      "img": "./img/fotoscajas/desayuno/desayuno2.png",
+      "img": "./img/fotoscajas/DESAYUNO/desayuno2.png",
       "title": "Tapa y caja",
       "medida": "25x25x10 | 25x25x15 | 32x25x10",
       "categoria": "box",
       "id" : "DESAYUNO"
     },
     {
-      "img": "./img/fotoscajas/desayuno/desayuno1.png",
+      "img": "./img/fotoscajas/DESAYUNO/desayuno1.png",
       "title": "Desayuno",
       "medida": "25x25x12 | 30x30x12 | 36x26x12 | 42x32x12 | HEXAGONAL Ø 8",
       "categoria": "box",
       "id" : "DESAYUNO"
     },
     {
-      "img": "./img/fotoscajas/desayuno/desayuno4.png",
+      "img": "./img/fotoscajas/DESAYUNO/desayuno4.png",
       "title": "Desayuno",
       "medida": "25x25x12 | 30x30x12 | 36x26x12 | 42x32x12 | HEXAGONAL Ø 8",
       "categoria": "box",
       "id" : "DESAYUNO"
     },
     {
-      "img": "./img/fotoscajas/deslizable/deslizable.png",
+      "img": "./img/fotoscajas/DESLIZABLE/deslizable.png",
       "title": "Deslizables",
       "medida": "16x16x4 | 20x20x4 | 25x25x7 | 30x30x7",
       "categoria": "box",
       "id" : "DESLIZABLES"
     },
     {
-      "img": "./img/fotoscajas/deslizable/Deslizables 1.png",
+      "img": "./img/fotoscajas/DESLIZABLE/Deslizables 1.png",
       "title": "Deslizables",
       "medida": "16x16x4 | 20x20x4 | 25x25x7 | 30x30x7",
       "categoria": "box",
       "id" : "DESLIZABLES"
     },
     {
-      "img": "./img/fotoscajas/deslizable/deslizables2.png",
+      "img": "./img/fotoscajas/DESLIZABLE/deslizables2.png",
       "title": "Deslizables",
       "medida": "16x16x4 | 20x20x4 | 25x25x7 | 30x30x7",
       "categoria": "box",
       "id" : "DESLIZABLES"
     },
     {
-      "img": "./img/fotoscajas/torta/torta1.png",
+      "img": "./img/fotoscajas/TORTA/torta1.png",
       "title": "Torta maletin",
       "medida": "16x16x4 | 20x20x4 | 25x25x7 | 30x30x7",
       "categoria": "box",
       "id" : "TORTA"
     },
     {
-      "img": "./img/fotoscajas/torta/torta2.png",
+      "img": "./img/fotoscajas/TORTA/torta2.png",
       "title": "Torta maletin",
       "medida": "16x16x4 | 20x20x4 | 25x25x7 | 30x30x7",
       "categoria": "box",
@@ -140,49 +140,49 @@ let products = [
       "id" : "DRIPS"
     },
     {
-      "img": "./img/fotoscajas/maletin/maletin1.png",
+      "img": "./img/fotoscajas/MALETIN/maletin1.png",
       "title": "Maletin",
       "medida": "16x16x18 | 14x14x17 | 17x10x15 | 25x14x13",
       "categoria": "MALETINES",
       "id" : "MALETINES"
     },
     {
-      "img": "./img/fotoscajas/maletin/maletin2.png",
+      "img": "./img/fotoscajas/MALETIN/maletin2.png",
       "title": "Maletin",
       "medida": "16x16x18 | 14x14x17 | 17x10x15 | 25x14x13",
       "categoria": "MALETINES",
       "id" : "MALETINES"
     },
     {
-      "img": "./img/fotoscajas/maletin/maletin3.png",
+      "img": "./img/fotoscajas/MALETIN/maletin3.png",
       "title": "Maletin",
       "medida": "16x16x18 | 14x14x17 | 17x10x15 | 25x14x13",
       "categoria": "MALETINES",
       "id" : "MALETINES"
     },
     {
-      "img": "./img/fotoscajas/maletin/maletin4.png",
+      "img": "./img/fotoscajas/MALETIN/maletin4.png",
       "title": "Maletin",
       "medida": "16x16x18 | 14x14x17 | 17x10x15 | 25x14x13",
       "categoria": "MALETINES",
       "id" : "MALETINES"
     },
     {
-      "img": "./img/fotoscajas/canasta/canasta1.png",
+      "img": "./img/fotoscajas/CANASTA/canasta1.png",
       "title": "Canasta",
       "medida": "12,5x12x5x4 | 15x15x5 | 22x12x5 | 27x27x10",
       "categoria": "Canasta",
       "id" : "CANASTA"
     },
     {
-      "img": "./img/fotoscajas/canasta/canasta2.png",
+      "img": "./img/fotoscajas/CANASTA/canasta2.png",
       "title": "Canasta",
       "medida": "12,5x12x5x4 | 15x15x5 | 22x12x5 | 27x27x10",
       "categoria": "Canasta",
       "id" : "CANASTA"
     },
     {
-      "img": "./img/fotoscajas/alfajores/alfajores1.png",
+      "img": "./img/fotoscajas/ALFAJORES/alfajores1.png",
       "title": "Alfajores",
       "medida": "6 UNIDADES: 20x13,5x2,5 | 12 UNIDADES: 22x14x5",
       "categoria": "Alfajores",
