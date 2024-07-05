@@ -452,50 +452,49 @@ h2 a{
 
 @media (max-width: 700px) {
 
-    .nav{
-      flex-direction: row;
-      padding: 0;
-      margin: 0;
-      justify-content: center;
-      gap: 80px;
-      padding: 0 20px;
-    }
+  .nav{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 0;
+  }
 
-    .nav .container-logo .container-letters{
-      text-wrap: nowrap;
-    }
+  .nav .img-logo{
+    width: 60px;
+  }
 
-    .nav .products-container .container-cart{
-      margin-right: 30px;
-    }
+  .nav .container-logo{
+    gap: 20px;
+  }
 
-    .nav .products-container .container-cart .container-letters{
-      display: none;
-    }
+  .nav .container-logo .container-letters{
+    text-wrap: nowrap;
+    font-size: 17px;
+  }
 
-    .nav .products-container .sucursales-container{
-      margin-right: 30px;
-    }
+  .nav .products-container{
+    flex-direction: column;
+  }
 
-    .nav .products-container .sucursales-container span{
-      display: none;
-    }
-
-    .nav .list-btn{
-      display: block;
-      padding: 0 20px;
-    }
+  .nav .list-btn{
+    justify-content: center;
+    padding: 0;
+  }
     
     .slider{
       padding: 0 10px;
+      width: 400px;
     }
 
     .main .slider-container .description{
-      margin: 0;
+      margin-top: 50px;
+      margin-bottom: 0;
     }
 
     .main .slider img{
-      width: 600px;
+      width: 400px;
       height: auto;
     }
 
@@ -516,8 +515,22 @@ h2 a{
       text-align: center;
     }
 
+    .main .map-container .map{
+      width: 300px;
+    }
+    
+
     .main .sucursales-container{
       flex-direction: column;
+    }
+
+    .main .sucursales-container .caba-img{
+      width: 350px;
+    }
+
+    .main .sucursales-container .container-letters{
+      padding: 10px 20px;
+      width: 400px;
     }
 
     .footer{
@@ -535,7 +548,7 @@ h2 a{
     }
 
     .container-wpp{
-      bottom: 60px;
+      bottom: 80px;
       z-index: 9999;
     }
   }
