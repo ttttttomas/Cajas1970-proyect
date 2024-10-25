@@ -137,6 +137,72 @@ a{
   font-family: 'Montserrat', system-ui;
 }
 
+.navidad-section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.title-navidad{
+  font-size: 50px;
+  position : relative;
+  color: #fff;
+  font-weight: 900;
+}
+
+.navidad-section h3{
+  font-size: 50px;
+  color: #fff;
+}
+
+.imagenes-navidad{
+  font-size: 50px;
+  color: #fff;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container-img-navidad{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.imagenes-navidad img{
+  width: 200px;
+}
+
+.span-imagen-navidad{
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.span-medida{
+  font-size: 20px;
+}
+
+.gorrito{
+  position: absolute;
+  top: -15px;
+  right: -30px;
+  transform: rotate(25deg);
+}
+
+.navidad-section p{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+
 .slider-container {
   display: flex;
   justify-content: center;
@@ -483,6 +549,31 @@ h2 a{
     padding: 0;
   }
     
+  .navidad-section{
+    flex-direction: column;
+    padding-top: 120px;
+  }
+
+  .imagenes-navidad{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navidad-section h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .navidad-section p{
+    font-size: 15px;
+  }
+
+  .gorrito{
+    position: absolute;
+    left:280px;
+  }
+
     .slider{
       padding: 0 10px;
       width: 400px;
@@ -534,17 +625,13 @@ h2 a{
     }
 
     .footer{
-      gap: 0;
+      height: auto;
+      align-items: center;
     }
 
-    .footer .rights-container{
-      display: flex;
+    .footer ul{
       flex-direction: column;
       gap: 0;
-    }
-
-    .footer ul div{
-      display: block;
     }
 
     .container-wpp{
